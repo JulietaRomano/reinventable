@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
+
+body {
+  background: #203137;
+  background: radial-gradient(circle, #203137 0%, black 100%); }
+
+.hidden {
+  overflow: hidden; }
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px; }
+
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite; }
+
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s; }
+
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1; }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0; } }
+
+.productos-container {
+  padding-top: 3em;
+  padding-bottom: 5em; }
+  .productos-container .productos-portada {
+    padding: 3em;
+    text-align: justify; }
+    .productos-container .productos-portada .titulo2 {
+      border-bottom: solid white;
+      text-align: center;
+      margin: auto;
+      width: 15em;
+      border-bottom: 3px #7FC5A4 solid; }
+      .productos-container .productos-portada .titulo2 h3 {
+        color: #ffffffab;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 35px; }
+    .productos-container .productos-portada .productosPortada-texto {
+      margin: auto;
+      width: 50em;
+      padding-top: 3em; }
+      .productos-container .productos-portada .productosPortada-texto p {
+        color: lightgray;
+        font-size: 17px; }
+  .productos-container .productos-cajas {
+    padding: 2em;
+    display: flex;
+    justify-content: space-around; }
+    .productos-container .productos-cajas .card {
+      position: relative;
+      width: 260px;
+      height: 320px;
+      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      border: solid 0px;
+      transition: .3s ease all; }
+      .productos-container .productos-cajas .card:hover {
+        transform: scale(1.2);
+        transform-origin: center; }
+      .productos-container .productos-cajas .card .card-titulo {
+        padding-top: .3em;
+        border-top: solid .1em #eeea0e;
+        background: #203137;
+        background: radial-gradient(circle, #203137 0%, black 100%); }
+        .productos-container .productos-cajas .card .card-titulo h4 {
+          font-size: 1.2em;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 700;
+          color: #ffffff; }
+      .productos-container .productos-cajas .card--image {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; }
+        .productos-container .productos-cajas .card--image img {
+          width: 140%;
+          height: 140%;
+          object-fit: cover; }
+      .productos-container .productos-cajas .card--info {
+        --size: 20px;
+        width: var(--size);
+        height: var(--size);
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 2px;
+        position: absolute;
+        transition: width 550ms ease, height 550ms ease, right 550ms ease, background 550ms ease;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; }
+        .productos-container .productos-cajas .card--info::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 50%, transparent 100%);
+          z-index: 1;
+          opacity: 0;
+          transition: opacity 550ms ease; }
+        .productos-container .productos-cajas .card--info.info--1 {
+          bottom: 47%;
+          right: 80%; }
+          .productos-container .productos-cajas .card--info.info--1 .info--image img {
+            top: -80%;
+            left: -20%; }
+        .productos-container .productos-cajas .card--info.info--2 {
+          bottom: 25%;
+          right: 15%; }
+          .productos-container .productos-cajas .card--info.info--2 .info--image img {
+            right: -20%;
+            bottom: -80%; }
+        .productos-container .productos-cajas .card--info .info--text {
+          display: block;
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          top: 46%;
+          bottom: 5%;
+          font-size: 0.9em;
+          letter-spacing: 1px;
+          font-weight: bold;
+          color: white;
+          text-shadow: 2px 2px 2px #05050c;
+          white-space: nowrap;
+          z-index: 2;
+          opacity: 0;
+          transform: translateY(25%);
+          transition: opacity 250ms ease, transform 250ms ease; }
+        .productos-container .productos-cajas .card--info .info--image {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          overflow: hidden; }
+          .productos-container .productos-cajas .card--info .info--image img {
+            position: absolute;
+            width: 340%;
+            height: 340%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 550ms ease; }
+      .productos-container .productos-cajas .card:hover .card--info {
+        --size: 100px; }
+        .productos-container .productos-cajas .card:hover .card--info::after {
+          opacity: 1; }
+        .productos-container .productos-cajas .card:hover .card--info.info--1 {
+          right: 71%;
+          transition-delay: 100ms; }
+        .productos-container .productos-cajas .card:hover .card--info.info--2 {
+          right: -10%; }
+        .productos-container .productos-cajas .card:hover .card--info .info--image img {
+          opacity: 1; }
+        .productos-container .productos-cajas .card:hover .card--info .info--text {
+          transition-delay: 550ms;
+          opacity: 1;
+          transform: translateY(0%); }
+    .productos-container .productos-cajas .support {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      padding: 10px;
+      display: flex; }
+      .productos-container .productos-cajas .support a {
+        margin: 0 10px;
+        color: #fff;
+        font-size: 1.8rem;
+        backface-visibility: hidden;
+        transition: all 150ms ease; }
+        .productos-container .productos-cajas .support a:hover {
+          transform: scale(1.1); }
+
+.block {
+  display: none; }
+
+.productos {
+  background: radial-gradient(circle, #7fc5a4 0%, #050b1d 100%);
+  padding: 5em 0 3em 0;
+  margin-top: 2em; }
+  .productos .productos-titulos {
+    text-align: justify;
+    border-bottom: solid white;
+    text-align: center;
+    margin: 0 auto 2em;
+    width: 12em;
+    border-bottom: 3px #7FC5A4 solid; }
+    .productos .productos-titulos h3 {
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 30px; }
+  .productos .productos-texto {
+    border-bottom: solid 0.5em gray;
+    border-left: solid .5em gray;
+    margin: 5em auto 5em;
+    padding: 3em 2em 2em 2em;
+    background-color: white;
+    width: 43em;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+    .productos .productos-texto h5 {
+      color: #464444;
+      margin: auto;
+      width: 10em;
+      border-bottom: green solid;
+      font-weight: 800;
+      font-size: 23px;
+      text-transform: uppercase; }
+    .productos .productos-texto .productos-cajaTexto {
+      margin-top: 2em; }
+      .productos .productos-texto .productos-cajaTexto .productos-span {
+        text-transform: uppercase;
+        font-weight: 800; }
+      .productos .productos-texto .productos-cajaTexto .boton1 {
+        display: inline-block;
+        padding: 0 1em 0 1em;
+        border-radius: 5px;
+        background-color: yellow;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+
+.productos-carousel {
+  position: relative;
+  height: 100%; }
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
+
+.swiper-slide img {
+  display: block;
+  width: 100%; }
+
+.SobreNosotros {
+  display: flex; }
+  .SobreNosotros .SobreNosotros-imagen {
+    width: 50%;
+    height: 550px; }
+    .SobreNosotros .SobreNosotros-imagen img {
+      width: 100%;
+      height: 100%; }
+  .SobreNosotros .SobreNosotros-texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #203137;
+    background: radial-gradient(circle, #203137 0%, black 100%); }
+    .SobreNosotros .SobreNosotros-texto .Titulo1 {
+      margin-top: 6em;
+      display: inline-block;
+      border-bottom: 2px white solid; }
+      .SobreNosotros .SobreNosotros-texto .Titulo1 h3 {
+        color: #7FC5A4;
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        font-weight: 900; }
+    .SobreNosotros .SobreNosotros-texto .SobreNosotros-p {
+      margin: 3em 5em 3em 5em;
+      color: lightgray; }
+      .SobreNosotros .SobreNosotros-texto .SobreNosotros-p p {
+        font-size: 17px;
+        text-align: center; }
+
+.porQueElegirnos-container {
+  background-color: white;
+  padding: 3em;
+  text-align: center; }
+  .porQueElegirnos-container h5 {
+    color: #5D737E;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 28px; }
+  .porQueElegirnos-container .porQueElegirnos-cajaContenedora {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em; }
+    .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box {
+      width: 23em;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box .porQueElegirnos-imgTitulo {
+        border-bottom: solid #5d737e81;
+        margin-bottom: 1em;
+        width: 80%; }
+        .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box .porQueElegirnos-imgTitulo h6 {
+          color: #5D737E;
+          font-family: 'Raleway', sans-serif;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 25px;
+          margin-top: 1em; }
+      .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box p {
+        color: #5D737E;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px; }
