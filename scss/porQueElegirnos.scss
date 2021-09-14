@@ -2,17 +2,25 @@
     background-color: white;
     padding: 3em;
     text-align: center;
+    @include smarthphone {
+        font-size: 10px;
+    }
     h5{
         color: #5D737E;
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 28px;
+        font-size: 1.75em;
     }
     .porQueElegirnos-cajaContenedora{
         display: flex;
         justify-content: space-around;
         margin-top: 3em;
+        @include smarthphone {
+            flex-direction: column;
+            align-items: center;
+        }
+    
         .porQueElegirnos-box{
             width: 23em;
             display: flex;
@@ -22,19 +30,30 @@
                 border-bottom: solid #5d737e81;
                 margin-bottom: 1em;
                 width: 80%;
+                img{
+                    @include smarthphone {
+                        width: 5em;
+                    }
+                }
+
+
                 h6{
                     color: #5D737E;
                     font-family: 'Raleway', sans-serif;
                     text-transform: uppercase;
                     font-weight: 900;
-                    font-size: 25px;
+                    font-size: 1.5625em;
                     margin-top: 1em;
+                    @include smarthphone {
+                        font-size: 12px;
+                    }
+
                 }
             }
             p{
                 color: #5D737E;
                     font-family: 'Raleway', sans-serif;
-                    font-size: 18px;
+                    font-size: 1.125em;
                 
             }
         }

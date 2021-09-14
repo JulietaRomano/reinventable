@@ -47,9 +47,20 @@ body {
     height: 72px;
     opacity: 0; } }
 
+/*Media Queries*/
+.menu-container {
+  padding: 0;
+  color: rgba(255, 255, 255, 0); }
+  .menu-container .logo {
+    width: 4em; }
+
 .productos-container {
   padding-top: 3em;
   padding-bottom: 5em; }
+  @media (max-width: 480px) {
+    .productos-container {
+      font-size: 10px;
+      padding-bottom: 0em; } }
   .productos-container .productos-portada {
     padding: 3em;
     text-align: justify; }
@@ -64,7 +75,7 @@ body {
         font-family: 'Raleway', sans-serif;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 35px; }
+        font-size: 2.1875em; }
     .productos-container .productos-portada .productosPortada-texto {
       margin: auto;
       width: 50em;
@@ -72,17 +83,28 @@ body {
       .productos-container .productos-portada .productosPortada-texto p {
         color: lightgray;
         font-size: 17px; }
+      @media (max-width: 480px) {
+        .productos-container .productos-portada .productosPortada-texto {
+          width: 28em; } }
   .productos-container .productos-cajas {
     padding: 2em;
     display: flex;
     justify-content: space-around; }
+    @media (max-width: 480px) {
+      .productos-container .productos-cajas {
+        font-size: 10px;
+        flex-direction: column;
+        align-items: center; } }
     .productos-container .productos-cajas .card {
       position: relative;
-      width: 260px;
-      height: 320px;
+      width: 16.25em;
+      height: 20em;
       box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
       border: solid 0px;
       transition: .3s ease all; }
+      @media (max-width: 480px) {
+        .productos-container .productos-cajas .card {
+          margin-bottom: 3em; } }
       .productos-container .productos-cajas .card:hover {
         transform: scale(1.2);
         transform-origin: center; }
@@ -109,7 +131,7 @@ body {
           height: 140%;
           object-fit: cover; }
       .productos-container .productos-cajas .card--info {
-        --size: 20px;
+        --size: 1.25em;
         width: var(--size);
         height: var(--size);
         background: rgba(0, 0, 0, 0.75);
@@ -187,14 +209,14 @@ body {
           transform: translateY(0%); }
     .productos-container .productos-cajas .support {
       position: absolute;
-      right: 10px;
-      bottom: 10px;
-      padding: 10px;
+      right: 0.625em;
+      bottom: 0.625em;
+      padding: 0.625em;
       display: flex; }
       .productos-container .productos-cajas .support a {
-        margin: 0 10px;
+        margin: 0 0.625em;
         color: #fff;
-        font-size: 1.8rem;
+        font-size: 1.8em;
         backface-visibility: hidden;
         transition: all 150ms ease; }
         .productos-container .productos-cajas .support a:hover {
@@ -204,9 +226,13 @@ body {
   display: none; }
 
 .productos {
+  clip-path: polygon(50% 0%, 77% 3%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 3%);
   background: radial-gradient(circle, #7fc5a4 0%, #050b1d 100%);
-  padding: 5em 0 3em 0;
+  padding: 6em 0 3em 0;
   margin-top: 2em; }
+  @media (max-width: 480px) {
+    .productos {
+      font-size: 10px; } }
   .productos .productos-titulos {
     text-align: justify;
     border-bottom: solid white;
@@ -219,35 +245,56 @@ body {
       font-family: 'Raleway', sans-serif;
       text-transform: uppercase;
       font-weight: 900;
-      font-size: 30px; }
-  .productos .productos-texto {
-    border-bottom: solid 0.5em gray;
-    border-left: solid .5em gray;
-    margin: 5em auto 5em;
-    padding: 3em 2em 2em 2em;
-    background-color: white;
-    width: 43em;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
-    .productos .productos-texto h5 {
-      color: #464444;
-      margin: auto;
-      width: 10em;
-      border-bottom: green solid;
-      font-weight: 800;
-      font-size: 23px;
-      text-transform: uppercase; }
-    .productos .productos-texto .productos-cajaTexto {
-      margin-top: 2em; }
-      .productos .productos-texto .productos-cajaTexto .productos-span {
-        text-transform: uppercase;
-        font-weight: 800; }
-      .productos .productos-texto .productos-cajaTexto .boton1 {
-        display: inline-block;
-        padding: 0 1em 0 1em;
-        border-radius: 5px;
-        background-color: yellow;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+      font-size: 1.875em; }
+  .productos .planetas-container {
+    display: flex;
+    justify-content: center;
+    margin: 8em auto 5em;
+    align-items: flex-start; }
+    @media (max-width: 480px) {
+      .productos .planetas-container {
+        font-size: 10px;
+        margin: 3em auto 0em;
+        flex-direction: column; } }
+    .productos .planetas-container .productos-texto {
+      border: solid 0.5em gray;
+      padding: 3em 2em 2em 2em;
+      background-color: white;
+      width: 45%;
+      text-align: center;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; }
+      @media (max-width: 480px) {
+        .productos .planetas-container .productos-texto {
+          font-size: 10px;
+          width: 90%;
+          margin: auto; } }
+      .productos .planetas-container .productos-texto h5 {
+        color: #464444;
+        margin: auto;
+        width: 10em;
+        border-bottom: green solid;
+        font-weight: 800;
+        font-size: 1.4375em;
+        text-transform: uppercase; }
+      .productos .planetas-container .productos-texto .productos-cajaTexto {
+        margin-top: 2em; }
+        .productos .planetas-container .productos-texto .productos-cajaTexto .productos-span {
+          text-transform: uppercase;
+          font-weight: 800; }
+        .productos .planetas-container .productos-texto .productos-cajaTexto .boton1 {
+          display: inline-block;
+          padding: 0 1em 0 1em;
+          border-radius: 5px;
+          background-color: yellow;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    .productos .planetas-container .planeta-videos {
+      margin-top: 3em;
+      height: 23em;
+      background-color: black;
+      width: 40%; }
+      @media (max-width: 480px) {
+        .productos .planetas-container .planeta-videos {
+          display: none; } }
 
 .productos-carousel {
   position: relative;
@@ -270,9 +317,16 @@ body {
 
 .SobreNosotros {
   display: flex; }
+  @media (max-width: 480px) {
+    .SobreNosotros {
+      flex-direction: column; } }
   .SobreNosotros .SobreNosotros-imagen {
     width: 50%;
-    height: 550px; }
+    height: 40.625em; }
+    @media (max-width: 480px) {
+      .SobreNosotros .SobreNosotros-imagen {
+        width: 100%;
+        font-size: 10px; } }
     .SobreNosotros .SobreNosotros-imagen img {
       width: 100%;
       height: 100%; }
@@ -283,10 +337,16 @@ body {
     align-items: center;
     background: #203137;
     background: radial-gradient(circle, #203137 0%, black 100%); }
+    @media (max-width: 480px) {
+      .SobreNosotros .SobreNosotros-texto {
+        width: 100%; } }
     .SobreNosotros .SobreNosotros-texto .Titulo1 {
-      margin-top: 6em;
+      margin-top: 10em;
       display: inline-block;
       border-bottom: 2px white solid; }
+      @media (max-width: 480px) {
+        .SobreNosotros .SobreNosotros-texto .Titulo1 {
+          margin: 2em; } }
       .SobreNosotros .SobreNosotros-texto .Titulo1 h3 {
         color: #7FC5A4;
         font-family: 'Raleway', sans-serif;
@@ -295,24 +355,38 @@ body {
     .SobreNosotros .SobreNosotros-texto .SobreNosotros-p {
       margin: 3em 5em 3em 5em;
       color: lightgray; }
+      @media (max-width: 480px) {
+        .SobreNosotros .SobreNosotros-texto .SobreNosotros-p {
+          margin: 0; } }
       .SobreNosotros .SobreNosotros-texto .SobreNosotros-p p {
         font-size: 17px;
         text-align: center; }
+        @media (max-width: 480px) {
+          .SobreNosotros .SobreNosotros-texto .SobreNosotros-p p {
+            font-size: 15px;
+            padding: 1em; } }
 
 .porQueElegirnos-container {
   background-color: white;
   padding: 3em;
   text-align: center; }
+  @media (max-width: 480px) {
+    .porQueElegirnos-container {
+      font-size: 10px; } }
   .porQueElegirnos-container h5 {
     color: #5D737E;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 28px; }
+    font-size: 1.75em; }
   .porQueElegirnos-container .porQueElegirnos-cajaContenedora {
     display: flex;
     justify-content: space-around;
     margin-top: 3em; }
+    @media (max-width: 480px) {
+      .porQueElegirnos-container .porQueElegirnos-cajaContenedora {
+        flex-direction: column;
+        align-items: center; } }
     .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box {
       width: 23em;
       display: flex;
@@ -322,14 +396,20 @@ body {
         border-bottom: solid #5d737e81;
         margin-bottom: 1em;
         width: 80%; }
+        @media (max-width: 480px) {
+          .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box .porQueElegirnos-imgTitulo img {
+            width: 5em; } }
         .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box .porQueElegirnos-imgTitulo h6 {
           color: #5D737E;
           font-family: 'Raleway', sans-serif;
           text-transform: uppercase;
           font-weight: 900;
-          font-size: 25px;
+          font-size: 1.5625em;
           margin-top: 1em; }
+          @media (max-width: 480px) {
+            .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box .porQueElegirnos-imgTitulo h6 {
+              font-size: 12px; } }
       .porQueElegirnos-container .porQueElegirnos-cajaContenedora .porQueElegirnos-box p {
         color: #5D737E;
         font-family: 'Raleway', sans-serif;
-        font-size: 18px; }
+        font-size: 1.125em; }

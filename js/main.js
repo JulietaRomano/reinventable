@@ -14,6 +14,8 @@ $( document ).ready(function() {
 
             if (contador == 0){
                 $('#planetasSection').removeClass("block");
+                $('#retratosSection').addClass("block");
+                $('#lunasSection').addClass("block");
                 contador = 1;
             }
             else{
@@ -31,6 +33,8 @@ $( document ).ready(function() {
 
             if (contador == 0){
                 $('#retratosSection').removeClass("block");
+                $('#planetasSection').addClass("block");
+                $('#lunasSection').addClass("block");
                 contador = 1;
             }
             else{
@@ -50,6 +54,9 @@ $( document ).ready(function() {
 
             if (contador == 0){
                 $('#lunasSection').removeClass("block");
+                $('#retratosSection').addClass("block");
+                $('#planetasSection').addClass("block");
+
                 contador = 1;
             }
             else{

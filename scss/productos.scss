@@ -1,22 +1,29 @@
 .productos-container{
     padding-top: 3em;
     padding-bottom: 5em;
+    @include smarthphone{
+        font-size: 10px;
+        padding-bottom: 0em;
+    }
+
 
     .productos-portada{
         padding: 3em;
         text-align: justify;
+
         .titulo2{
             border-bottom: solid white;
             text-align: center;
             margin: auto;
             width:15em;
             border-bottom: 3px #7FC5A4 solid;
+
             h3{
                 color: #ffffffab;
                 font-family: 'Raleway', sans-serif;
                 text-transform: uppercase;
                 font-weight: 900;
-                font-size: 35px;
+                font-size: 2.1875em;
             }
         }
         .productosPortada-texto{
@@ -27,6 +34,9 @@
                 color: rgb(211, 211, 211);
                 font-size: 17px;
             }
+            @include smarthphone{
+                width: 28em;
+            }
         }
 
     }
@@ -34,14 +44,25 @@
         padding: 2em;
         display: flex;
         justify-content: space-around;
+        @include smarthphone{
+            font-size: 10px;
+            flex-direction: column;
+            align-items: center;
+        }
+        
 
         .card {
             position: relative;
-            width: 260px;
-            height: 320px;
+            width: 16.25em;
+            height: 20em;
             box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
             border: solid 0px;
             transition: .3s ease all;
+            @include smarthphone{
+               margin-bottom: 3em;
+            }
+    
+    
             &:hover {
                 transform: scale(1.2);
                 transform-origin: center;
@@ -78,7 +99,7 @@
             }
         
             &--info {
-                --size: 20px;
+                --size: 1.25em;
                 width: var(--size);
                 height: var(--size);
                 background: rgba(0, 0, 0, 0.75);
@@ -193,14 +214,14 @@
         
         .support{
             position: absolute;
-            right: 10px;
-            bottom: 10px;
-            padding: 10px;
+            right: 0.625em;
+            bottom: 0.625em;
+            padding: 0.625em;
             display: flex;
             a{
-                margin: 0 10px;
+                margin: 0 0.625em;
                 color: #fff;
-                font-size: 1.8rem;
+                font-size: 1.8em;
                 backface-visibility: hidden;
                 transition: all 150ms ease;
                 &:hover{
@@ -218,9 +239,14 @@
 
 
 .productos{
-    background: radial-gradient(circle, rgba(127,197,164,1) 0%, rgba(5,11,29,1) 100%);
-    padding: 5em 0 3em 0;
+    clip-path: polygon(50% 0%, 77% 3%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 3%);
+   background: radial-gradient(circle, rgba(127,197,164,1) 0%, rgba(5,11,29,1) 100%);
+    padding: 6em 0 3em 0;
     margin-top: 2em;
+    @include smarthphone{
+        font-size: 10px;
+    }
+
     
     .productos-titulos{
         text-align: justify;
@@ -229,47 +255,73 @@
         margin: 0 auto 2em;
         width:12em;
         border-bottom: 3px #7FC5A4 solid;
+    
         h3{
             color: #ffffff;
             font-family: 'Raleway', sans-serif;
             text-transform: uppercase;
             font-weight: 900;
-            font-size: 30px;
+            font-size: 1.875em;
         }
     }
+    .planetas-container{
+        display: flex;
+        justify-content: center;
+        margin: 8em auto 5em;
+        align-items: flex-start;
+        @include smarthphone{
+            font-size: 10px;
+            margin:3em auto 0em;
+           flex-direction: column;
+        }
 
-    .productos-texto{
-        border-bottom: solid .5em rgb(128, 128, 128);
-        border-left: solid .5em gray;
-        margin: 5em auto 5em;
-        padding: 3em 2em 2em 2em;
-        background-color: white;
-        width: 43em;
-        text-align: center;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            h5{
-                color: rgb(70, 68, 68);
-                margin: auto;
-                width: 10em;
-                border-bottom: green solid;
-                font-weight: 800;
-                font-size: 23px;
-                text-transform: uppercase;
+        .productos-texto{
+            border: solid .5em rgb(128, 128, 128);
+            padding: 3em 2em 2em 2em;
+            background-color: white;
+            width: 45%;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    @include smarthphone{
+        font-size: 10px;
+        width: 90%;
+        margin: auto;
+    }
+
+                h5{
+                    color: rgb(70, 68, 68);
+                    margin: auto;
+                    width: 10em;
+                    border-bottom: green solid;
+                    font-weight: 800;
+                    font-size: 1.4375em;
+                    text-transform: uppercase;
+                }
+            .productos-cajaTexto{
+                margin-top: 2em;
+                
+                .productos-span{
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+                .boton1{
+                    display: inline-block;
+                    padding: 0 1em 0 1em;
+                    border-radius: 5px;
+                    background-color: yellow;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
             }
-        .productos-cajaTexto{
-            margin-top: 2em;
-            
-            .productos-span{
-                text-transform: uppercase;
-                font-weight: 800;
+        }
+        .planeta-videos{
+            margin-top: 3em;
+            height:23em;
+            background-color: rgb(0, 0, 0);
+            width: 40%;
+            @include smarthphone{
+                display: none;
             }
-            .boton1{
-                display: inline-block;
-                padding: 0 1em 0 1em;
-                border-radius: 5px;
-                background-color: yellow;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            }
+    
         }
     }
 }
@@ -333,3 +385,6 @@
           display: block;
           width: 100%;
         }
+
+
+       
