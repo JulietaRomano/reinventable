@@ -5,6 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reinventable</title>
+        <!--Animate-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!--Wow-->
+        <link rel="stylesheet" href="css/animate.css">        
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap" rel="stylesheet">
@@ -19,136 +23,48 @@
                 <div></div>
             </div>
         </div>
-        <header>
-            <!--Menú-->
-            <nav class="navbar navbar-expand-lg fixed-top menu-container">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        <img src="./imagenes/logo.png" class="logo" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Sobre nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Medios de pago</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" tabindex="-1">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!--Slider-->
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-
-                <div class="carousel-inner">
-                  <!--Imagen 1 Carrousel-->
-                    <div class="carousel-item active">
-                        <img src="./hoii.gif" class="d-block w-100 portadaIndexImg" alt="imagen-mascotas-carousel">
-                        <div class="carousel-caption d-none d-md-block carouselPortada_container-1">
-                            <!--Caja dentro del carrousel 1-->
-                            <div class="carouselPortada_caja carouselPortada_caja-1 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
-                                <h4>¿PERDISTE A TU MASCOTA?</h4>
-                                <p class="carouselPortada_texto">
-                                    Estas son las mascotas que han sido rescatadas.<br>Búscala en nuestro listado:
-                                </p>
-                                <div class="carouselPortada_botones">
-                                    <a href="./Pages/Mascotas_Perdidas.html">
-                                        <div class="botones">
-                                            <div class="botones1">
-                                                <p class="botonesP">
-                                                    Mascotas perdidas
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <!--Botones-->
-                                    <a href="./Pages/Mascotas_Encontradas.html">
-                                        <div class="botones">
-                                            <div class="botones1">
-                                                <p class="botonesP">
-                                                    Mascotas encontradas
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Imagen 2 Carrousel-->
-                    <div class="carousel-item">
-                        <img src="./Imagenes/Carousel/carousel_img2.jpg" class="d-block w-100 portadaIndexImg" alt="imagen-mascotas-carousel">
-                        <div class="carousel-caption d-none d-md-block carouselPortada_container-2">
-                            <!--Caja dentro del carrousel 2-->
-                            <div class="carouselPortada_caja carouselPortada_caja-2 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
-                                <h4>REGISTRA A TU AMIG@</h4>
-                                <p class="carouselPortada_texto"> 
-                                    Si perdiste o encontraste una mascota, registrala para comenzar su búsqueda.
-                                </p>
-                                <!--Botones-->
-                                <a href="./Pages/Registro.html">
-                                    <div class="botones">
-                                        <div class="botones1">
-                                            <p class="botonesP">
-                                                Registrar una mascota
-                                            </p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Imagen 3 Carrousel-->
-                    <div class="carousel-item">
-                        <img src="./Imagenes/Carousel/carousel_img3.jpg" class="d-block w-100 portadaIndexImg" alt="imagen-mascotas-carousel">
-                        <div class="carousel-caption d-none d-md-block carouselPortada_container-3">
-                            <!--Caja dentro del carrousel 3-->
-                            <div class="carouselPortada_caja carouselPortada_caja-3 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
-                                <h4> FINALES FELICES</h4>
-                                <p class="carouselPortada_texto">
-                                    Entre tod@s podemos hacer un mundo mejor para los animales. Mirá nuestras historias de reencuentro.
-                                </p>
-                                <!--Botones-->
-                                <a href="./Pages/Reencuentro.html">
-                                    <div class="botones">
-                                        <div class="botones1">
-                                            <p class="botonesP">Reencuentros</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
-
+        <header id="navbar">
+            <a href="#" class="logo">Reinventable</a>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
         </header>
+        <section class="banner">
+            <div class="imgBx">
+                <img src="imagenes/images/bg1.jpg" alt="" class="active">
+                <img src="imagenes/images/bg2.jpg" alt="" >
+                <img src="imagenes/images/bg3.jpg" alt="">
+            </div>
+            <div class="contentBx">
+                <div class="active">
+                    <h2>Lamparas personalizadas</h2>
+                    <p>Diseñamos tu lampara totalmente personalizada</p>
+                    <a href="#">Conocé más</a>
+                </div>
+                <div>
+                    <h2>Envios</h2>
+                    <p>Contamos con envios a todo Colombia</p>
+                    <a href="#">Conocé más</a>
+                </div>
+                <div>
+                    <h2>Planetas</h2>
+                    <p>Diseñamos tu lampara totalmente personalizada</p>
+                    <a href="#">Conocé más</a>
+                </div>
+            </div>
+    
+            <ul class="controls">
+                <li id="prev"></li>
+                <li id="next"></li>
+            </ul>
+        </section>
 
 
+        
         <main>
             <!--Productos-->
             <section class="productos-container">
@@ -166,19 +82,23 @@
                 </div>
                 <!--Cajas de productos-->
                 <article class="productos-cajas">
+        
+                    
                     <!-- Planetas -->
                     <div class="card">
                         <div class="card--image">
                             <img src="imagenes/productos/lamp.png" alt="image">
                         </div>
-                        <a href="#planetasSection" class="planetasBoton">
+                        <a href="" class="planetasBoton">
                             <div class="card--info info--1">
                                 <span class="info--text">GALERIA</span>
+                                
                                 <div class="info--image">
                                     <img src="imagenes/productos/lamp.png" alt="info image">
                                 </div>
                             </div>
                         </a>
+                        
                         <a href="#planetasTexto" class="planetasBoton">
                             <div class="card--info info--2">
                                 <span class="info--text">+INFO</span>
@@ -245,6 +165,7 @@
                         </div>
                     </div>
                 </article>
+                <div id="hol"></div>
             </section>
 
         <!-- Secciones de productos-->
@@ -308,32 +229,7 @@
                         </div>
                     </div>
                     <div class="planeta-videos">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <video src="imagenes/planetas/video.mp4" width="100%" height="100%" controls></video>
-                            </div>
-                              <div class="carousel-item">
-                                <img src="imagenes/planetas/colores.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="imagenes/planetas/control.png" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
+                        <video src="imagenes/planetas/video.mp4" width="100%" height="100%" controls></video>
                     </div>
                 </div>
 
@@ -352,31 +248,31 @@
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="imagenes/foto1.png" />
+                                <img src="imagenes/fotografias/foto1.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto2.png" />
+                                <img src="imagenes/fotografias/foto2.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto3.png" />
+                                <img src="imagenes/fotografias/foto3.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto4.png" />
+                                <img src="imagenes/fotografias/foto4.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto5.png" />
+                                <img src="imagenes/fotografias/foto5.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto6.png" />
+                                <img src="imagenes/fotografias/foto6.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto7.png" />
+                                <img src="imagenes/fotografias/foto7.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto8.png" />
+                                <img src="imagenes/fotografias/foto8.png" />
                             </div>
                             <div class="swiper-slide">
-                                <img src="imagenes/foto9.png" />
+                                <img src="imagenes/fotografias/foto9.png" />
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -401,32 +297,7 @@
                         </div>
                     </div>
                     <div class="planeta-videos">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <video src="imagenes/planetas/video.mp4"width="100%" height="100%" controls></video>
-                            </div>
-                              <div class="carousel-item">
-                                <img src="imagenes/planetas/colores.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="imagenes/planetas/control.png" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
+                        <video src="imagenes/fotografiavideo.mp4"width="100%" height="100%" controls></video>
                     </div>
                 </div>
 
@@ -434,7 +305,6 @@
             </section>
 
             <!--LUNAS-->
-
             <section class="productos block" id="lunasSection">
 
                 <div class="productos-titulos" >
@@ -485,48 +355,40 @@
                         </div>
                     </div>
                     <div class="planeta-videos">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <video src="imagenes/planetas/video.mp4"width="100%" height="100%" controls></video>
-                            </div>
-                              <div class="carousel-item">
-                                <img src="imagenes/planetas/colores.png" class="d-block w-100" alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="imagenes/planetas/control.png" class="d-block w-100" alt="...">
-                              </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
+                        <video src="imagenes/lunavideo.mp4" width="100%" height="100%" controls></video>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
             </section>
+
+            <!--Medios de pago-->
+    <section class="medios mt-5 mb-5">
+        <div class="inner__medios container">
+            <h1 class="text-center text-white pb-4">Medios de pago y envios</h1>
+            <div class="row inner__content">
+                <div class="topPosition">
+                    <div class="innerTextTop pb-4">
+                        <h1>Envios</h1>
+                        <p>Nuestro envíos son realizados por Interrapidisimo.
+                            Contamos con envíos a todo Colombia.
+                            El tiempo estipulado para cada entrega es de 1 a 3 días hábiles.</p>
+                    </div>
+                </div>
+                <div class="bottomPosition">
+                    <div class="innerTextBottom">
+                        <h1>Medios de pago</h1>
+                        <p>Pago transferencia bancaria. Bancolombia. Nequi. Daviplata.
+                            Los pagos se realizan por adelantado.
+                            Se puede separar desde 20mil pesos cualquier trabajo.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </section>
+
+
+
+
 
         <!--Calidez-Seguridad-Atencion-->
         <aside class="porQueElegirnos-container">
@@ -569,30 +431,75 @@
                             <h3 >Sobre nosotros</h3>
                         </div>
                         <div class="SobreNosotros-p">
-                            <p>Debido a la pandemia del Coronavirus, nos vimos en la necesidad de “reinventarnos”, es por eso que pensamos en un producto que sea innovador, basándonos en nuestras habilidades y conocimientos. 
+                            <p>
+                                Debido a la pandemia del Coronavirus, nos vimos en la necesidad de “reinventarnos”, es por eso que pensamos en un producto que sea innovador, basándonos en nuestras habilidades y conocimientos. 
                                 Investigando sobre litofanía con impresoras 3D (proyección de luz a través de una lámina), se nos ocurrió hacer lámparas personalizadas con imágenes impresas y tomamos como un desafío personal  que fueran creadas con la mejor definición posible. 
                                 Para ésto, utilizamos una impresora CNC que nos permite mejorar la calidad de la foto comparada con el resultado de una impresora 3D.
                             </p>
                         </div>
                     </div>
                 </article>
-                <article>
-                    <h4>Elaboración</h4>
-                    <p>
-                        Todas nuestras lámparas son realizada artesanalmente por un Ingeniero electrónico.
-                        Los modelos son hechos por una impresora 3D que utiliza láminas de plástico para imprimir los modelos y la base de madera se realiza en la máquina CNC (control numérico centralizado) que luego se lija y se recubre con cera de piso.
-                        En el caso de los portarretratos, realizamos el relieve con una máquina CNC que tiene un taladro para afinar los detalles. 
-                        Utilizamos focos de luz led con la mejor calidad.
-                    </p>
+                <article class="SobreNosotros-texto">
+                    <h4 class="Titulo1">Elaboración</h4>
+                    <div class="SobreNosotros-p">
+                        <p>
+                            Todas nuestras lámparas son realizada artesanalmente por un Ingeniero electrónico.
+                            Los modelos son hechos por una impresora 3D que utiliza láminas de plástico para imprimir los modelos y la base de madera se realiza en la máquina CNC (control numérico centralizado) que luego se lija y se recubre con cera de piso.
+                            En el caso de los portarretratos, realizamos el relieve con una máquina CNC que tiene un taladro para afinar los detalles. 
+                            Utilizamos focos de luz led con la mejor calidad.
+                        </p>
+                    </div>
                     <button>Ver video</button>
                 </article>
             </section>
 
 
         </main>
-        <footer>
-            
-        </footer>
+        <!--Footer-->
+    <footer class="footer pb-4">
+        <div class="container social__content">
+            <ul class="social__list">
+                <li><a href="#" class="social__item"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#" class="social__item"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__content container">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="mapaWeb">
+                        <h2 class="text-white h5">Accesos directos</h2>
+                        <ul>
+                            <li><a href="" class="item__link">Home</a></li>
+                            <li><a href="" class="item__link">About us</a></li>
+                            <li><a href="" class="item__link">Servicios</a></li>
+                            <li><a href="" class="item__link">Productos</a></li>
+                            <li><a href="" class="item__link">Contactos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h2 class="text-white h5">Productos</h2>
+                    <ul>
+                        <li><a href="" class="item__link">Lamparas planetas</a></li>
+                        <li><a href="" class="item__link">Lamparas Luna</a></li>
+                        <li><a href="" class="item__link">Portaretratos</a></li>
+                        <li><a href="" class="item__link">Llaveros</a></li>
+                        <li><a href="" class="boton__footer">Ver productos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h2 class="text-white h5">Contacto</h2>
+                    <ul>
+                        <li><a href="" class="item__link">mail@mail.com</a></li>
+                        <li><a href="" class="item__link">telefono</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <img src="imagenes/logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
        
@@ -620,7 +527,9 @@
                   },
                 });
               </script>
-
+            <!--WoW-->
+            <script src="js/wow.min.js"></script>
+            <script> new WOW().init();</script>
         <script src="js/main.js"></script>
 
     </body>
