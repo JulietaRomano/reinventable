@@ -1,9 +1,41 @@
-.menu-container{
-    padding: 0;
-    color: rgba(255, 255, 255, 0);
-    .logo{
-        width: 4em;
+
+/*Navbar*/
+.menu-color{
+	background-color:rgba(17, 17, 17, 0.623);
+	padding: 1.5em;
+	color: white;
+
+
+	.logo{
+		color: white;
+		font-size: 2em;
+		font-weight: 600;
+		@include smarthphone{
+			font-size: 20px;
+		}
+		.navbar-toggler{
+			background-color: white;
+		}
+	}
+	.menu-ul{
+		width: 60%;
+		justify-content: space-between;
+	
+		.menu-item{
+			color: white;
+			font-size: 1.1em;
+		}
+	}
+}
+.navbar-toggler{
+    background-color: white;
+    border: 0px;
+    .navbar-toggler-icon{
+        img{
+            width: 100%;
+        }
     }
 }
+
 
 

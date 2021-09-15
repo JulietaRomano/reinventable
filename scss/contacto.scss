@@ -1,0 +1,87 @@
+.contacto-container{
+    padding-top: 3em;
+    padding-bottom: .5em;
+	background-color:rgb(29, 28, 28);
+    @include smarthphone{
+        font-size: 10px;
+    }
+
+    .contacto-portada{
+        padding: 3em;
+        text-align: justify;
+        .titulo-contacto{
+            border-bottom: solid white;
+            text-align: center;
+            margin: auto;
+            width:15em;
+            border-bottom: 3px #7FC5A4 solid;
+            @include smarthphone{
+				width:32em;
+				font-size: 9px;
+			}
+
+            h3{
+                color: #fffffff8;
+                font-family: 'Raleway', sans-serif;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 2.1875em;
+            }
+        }
+    }
+    .contacto-caja{
+        background-color: white;
+        margin: 3em 3em 1em 3em;
+        padding: 2em 1em 3em 1em;
+        @include smarthphone{
+			font-size: 10px;
+			margin: 2em .5em 0em .5em;
+			padding: 2em 1.5em 1em 1.5em;
+		}
+        .contacto-texto{
+            margin: auto;
+            width: 50em;
+            padding-top: 3em;
+            text-align: center;
+            @include smarthphone{
+				padding: 0em;
+                font-size: 9.5px;
+			}
+
+            p{
+                color: rgb(71, 71, 71);
+                font-size: 1.2em;
+            }
+            h5{
+                color: rgb(70, 68, 68);
+                display: inline-block;
+                margin: 1em;
+                width: 10em;
+                border-bottom: green solid;
+                font-weight: 800;
+                font-size: 1.4375em;
+                text-transform: uppercase;
+            }
+            @include smarthphone{
+                width: 28em;
+            }
+        }
+        .contacto-redes{
+            padding-top: 1em;
+            display: flex;
+            margin: auto;
+            width: 30%;
+            justify-content: space-around;
+			img{
+                transition: .3s ease all;
+				&:hover{
+					transform: scale(1.2);
+				}	
+                @include smarthphone{
+                    width: 30px;
+                 }
+			}
+        }
+    
+    }
+}
