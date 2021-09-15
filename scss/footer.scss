@@ -46,7 +46,10 @@ footer{
         h6{
             color: #ffffff;
             text-transform:uppercase;   
-            font-weight: 800;     
+            font-weight: 800;  
+            @include smarthphone{
+                font-size: 10px;
+            }   
         }
         p{
             font-size: 1.3em;
@@ -61,10 +64,15 @@ footer{
         .mapaDeSitio-contacto{
             display: flex;
             flex-direction: column;
+            align-items: center;
             p{
                 margin-top: .2em;
                 font-size: 1em;
             }
+            @include smarthphone{
+                font-size: 7px;
+            } 
+
         }
     }
     .copyright{
