@@ -5,6 +5,10 @@
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
+	@include smarthphone{
+		min-height: 90vh;
+		font-size: 12px;
+	}
 }
 
 .banner .imgBx{
@@ -115,14 +119,18 @@
     padding-bottom: 5em;
 	background-color:rgba(17, 17, 17, 0.623);
 	@include smarthphone{
-        font-size: 10px;
+        font-size: 12px;
 		padding-bottom: 3em;
     }
 
     .medios-portada{
         padding: 3em;
         text-align: justify;
+		@include smarthphone{
+			padding: 1em;
+		}
         .medios-contacto{
+			
             border-bottom: solid rgb(238, 236, 236);
             text-align: center;
             margin: auto;

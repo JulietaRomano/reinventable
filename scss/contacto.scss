@@ -3,12 +3,15 @@
     padding-bottom: .5em;
 	background-color:rgb(29, 28, 28);
     @include smarthphone{
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .contacto-portada{
         padding: 3em;
         text-align: justify;
+        @include smarthphone{
+            padding: 1em;
+        }
         .titulo-contacto{
             border-bottom: solid white;
             text-align: center;
@@ -34,8 +37,8 @@
         margin: 3em 3em 1em 3em;
         padding: 2em 1em 3em 1em;
         @include smarthphone{
-			font-size: 10px;
-			margin: 2em .5em 0em .5em;
+			font-size: 12px;
+			margin: 2em 0em 0em 0em;
 			padding: 2em 1.5em 1em 1.5em;
 		}
         .contacto-texto{
@@ -45,7 +48,7 @@
             text-align: center;
             @include smarthphone{
 				padding: 0em;
-                font-size: 9.5px;
+                font-size: 11px;
 			}
 
             p{
