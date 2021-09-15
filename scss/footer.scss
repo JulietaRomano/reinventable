@@ -1,0 +1,80 @@
+/*Pie de pagina*/
+footer{
+    box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
+    background-color: rgb(54, 53, 56);
+    padding-top: 1em;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+    font-size: 10px;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: space-between;
+        margin: 0em 1em 0 1em;
+        border-bottom: 1px  solid;
+        p{
+            color: #cecccc;
+            font-weight: 600;
+        }
+        .redes-logos{
+            display: flex;
+            justify-content: space-around;
+            width: 11.25em;
+            color: white;
+        }
+    }
+    
+    .mapaDeSitio_conteiner{
+        margin: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        text-align: justify;
+
+        .logo-footer{
+            width: 8em;
+            height:8em;
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                display: none;
+            }
+           
+
+        }
+        h6{
+            color: #ffffff;
+            text-transform:uppercase;   
+            font-weight: 800;     
+        }
+        p{
+            font-size: 1.3em;
+            color: #b8b7b7;
+            margin: .2em;
+
+            //MEDIA QUERIES//
+            a{
+                font-size: .8em;
+            }
+        }
+        .mapaDeSitio-contacto{
+            display: flex;
+            flex-direction: column;
+            p{
+                margin-top: .2em;
+                font-size: 1em;
+            }
+        }
+    }
+    .copyright{
+        padding: 1em 0 .5em 0;
+        background-color: rgba(105, 105, 105, 0.589);
+        color: honeydew;
+        box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
+        text-align: center;
+        p{
+            font-size: 1.1em;
+        }
+    }
+}
